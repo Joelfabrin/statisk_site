@@ -1,0 +1,47 @@
+.produkter {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.produkter-container h2 {
+  text-align: start;
+  margin: 200px 12px 30px;
+  color: rgb(244, 218, 21);
+  font-size: 54px;
+  font-family: inter;
+}
+
+.tilbageknap {
+  display: inline-block;
+  margin: 10px 30px 30px;
+  font-size: 20px;
+  font-family: inter;
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.tilbageknap:hover {
+  color: rgb(240, 21, 244);
+}
+
+#bukser,
+#hoodie,
+#jakke,
+#tshirt {
+  font-size: 15px;
+  font-family: inter;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 700px) {
+  .produkter {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
