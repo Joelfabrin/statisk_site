@@ -17,8 +17,7 @@ Site layout body {
   min-height: 100svh;
   background-color: rgb(234, 234, 234);
 }
-*/ header,
-footer {
+*/ header {
   background-color: aliceblue;
   padding: 1rem;
 }
@@ -26,5 +25,10 @@ main {
   margin: 0 auto;
   width: 100%;
   background-color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+footer p {
+  text-align: center;
   padding: 1rem;
 }
