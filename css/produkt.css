@@ -1,0 +1,321 @@
+.textline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 120px 150px -50px;
+}
+
+.logo {
+  display: block;
+  width: 400px;
+  height: auto;
+  margin: 0;
+}
+
+.produkter-container h2 {
+  color: #f4da15;
+  font-size: 54px;
+  font-family: inter, sans-serif;
+}
+
+.tilbageknap {
+  display: inline-block;
+  margin: 10px 30px 14px;
+  font-size: 20px;
+  font-family: inter, sans-serif;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.tilbageknap:hover {
+  color: rgb(240, 21, 244);
+}
+
+.produkt-side {
+  margin: 0 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.hero-billede img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.produkt-info {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+}
+
+.produkt-brand {
+  font-size: 12px;
+  font-family: inter, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #5f5f5f;
+  text-transform: uppercase;
+}
+
+.produkt-navn {
+  font-size: 30px;
+  line-height: 1.05;
+  font-family: inter, sans-serif;
+  font-weight: 800;
+  color: #111;
+}
+
+.produkt-subline {
+  font-family: inter, sans-serif;
+  color: #4f4f4f;
+  line-height: 1.45;
+  font-size: 14px;
+}
+
+.pris-panel {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #ececec;
+  background: #fafafa;
+  padding: 14px;
+}
+
+.pris-label {
+  font-family: inter, sans-serif;
+  font-size: 11px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.produkt-pris {
+  font-family: inter, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #111;
+}
+
+.lagerstatus {
+  justify-self: end;
+  font-family: inter, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+}
+
+.lagerstatus.faa-tilbage {
+  color: #f015f4;
+  background: #f0f0f4;
+  border-color: #f015f4;
+}
+
+.valg-blok {
+  border-top: 1px solid #ececec;
+  padding-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.valg-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.valg-head h2 {
+  color: #111;
+  font-size: 15px;
+  font-family: inter, sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.size-guide {
+  font-family: inter, sans-serif;
+  font-size: 12px;
+  color: #666;
+}
+
+.size-guide:hover {
+  color: rgb(240, 21, 244);
+}
+
+.size-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.size-knap {
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  color: #111;
+  font-family: inter, sans-serif;
+  font-weight: 700;
+  padding: 12px 8px;
+  cursor: pointer;
+}
+
+.size-knap:hover:not(:disabled) {
+  border-color: rgb(240, 21, 244);
+}
+
+.size-knap.aktiv {
+  border-color: #111;
+  box-shadow: inset 0 0 0 1px #111;
+}
+
+.size-knap:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.quantity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-family: inter, sans-serif;
+}
+
+.quantity-row label {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.qty-box {
+  display: grid;
+  grid-template-columns: 42px 52px 42px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+}
+
+.qty-box button,
+.qty-box input {
+  border: 0;
+  background: transparent;
+  height: 42px;
+  text-align: center;
+  font-family: inter, sans-serif;
+  font-size: 14px;
+}
+
+.qty-box button {
+  cursor: pointer;
+}
+
+.qty-box button:hover {
+  background: #f6f6f6;
+}
+
+.qty-box input {
+  width: 110%;
+}
+
+.basket-knap,
+.secondary-knap {
+  width: 100%;
+  border: 1px solid #111;
+  text-align: center;
+  font-family: inter, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 14px 10px;
+  cursor: pointer;
+  transition:
+    background-color 120ms ease,
+    color 120ms ease,
+    border-color 120ms ease;
+}
+
+.basket-knap {
+  background: #111;
+  color: #fff;
+}
+
+.basket-knap:hover {
+  background: rgb(240, 21, 244);
+  border-color: rgb(240, 21, 244);
+}
+
+.secondary-knap {
+  background: #fff;
+  color: #111;
+}
+
+.secondary-knap:hover {
+  color: rgb(240, 21, 244);
+  border-color: rgb(240, 21, 244);
+}
+
+@media (max-width: 700px) {
+  .textline {
+    margin: 90px 18px 8px;
+    align-items: flex-start;
+  }
+
+  .textline h2 {
+    font-size: 34px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .tilbageknap,
+  .breadcrumb,
+  .produkt-side,
+  .info-grid,
+  .relaterede {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .produkt-galleri {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .size-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pris-panel {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .lagerstatus {
+    justify-self: start;
+  }
+
+  .relaterede-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

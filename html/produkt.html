@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/produkt.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>PRODUKT</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="produkter-container">
+        <div class="textline">
+          <h2>PRODUCT</h2>
+          <img
+            class="logo"
+            src="../img/Neon logo med stjernesprøjt over Nevada.png"
+            alt="logo"
+          />
+        </div>
+
+        <a class="tilbageknap" href="../html/produktliste.html">TILBAGE</a>
+
+        <section class="produkt-side" aria-label="Produktdetaljer">
+          <div class="produkt-galleri">
+            <div class="thumbs" aria-label="Produktbilleder"></div>
+            <figure class="hero-billede">
+              <img src="../img/HOODIE.webp" alt="Oversized hoodie i sort" />
+            </figure>
+          </div>
+
+          <article class="produkt-info">
+            <p class="produkt-brand">NEVADA / MEN</p>
+            <h1 class="produkt-navn">OVERSIZED HOODIE - MOTO BLACK</h1>
+            <p class="produkt-subline">
+              Heavyweight hoodie i oversized fit med grafisk rygprint og blød
+              fleece inderside.
+            </p>
+
+            <div class="pris-panel">
+              <div>
+                <p class="pris-label">Pris</p>
+                <p class="produkt-pris">DKK 649</p>
+              </div>
+              <p class="lagerstatus faa-tilbage">FEW LEFT</p>
+            </div>
+
+            <section class="valg-blok" aria-label="Vælg størrelse">
+              <div class="valg-head">
+                <h2>SIZE</h2>
+                <a href="#" class="size-guide">Size guide</a>
+              </div>
+              <div class="size-grid">
+                <button type="button" class="size-knap">XS</button>
+                <button type="button" class="size-knap">S</button>
+                <button type="button" class="size-knap aktiv">M</button>
+                <button type="button" class="size-knap">L</button>
+                <button type="button" class="size-knap">XL</button>
+                <button type="button" class="size-knap" disabled>XXL</button>
+              </div>
+            </section>
+
+            <section class="valg-blok" aria-label="Købskontrol">
+              <div class="quantity-row">
+                <label for="qty">Quantity</label>
+                <div class="qty-box">
+                  <button type="button" aria-label="Mindre">-</button>
+                  <input id="qty" type="number" value="1" min="1" />
+                  <button type="button" aria-label="Mere">+</button>
+                </div>
+              </div>
+
+              <div class="cta-grid">
+                <button type="button" class="basket-knap">ADD TO BASKET</button>
+                <button type="button" class="secondary-knap">
+                  ADD TO WISHLIST
+                </button>
+              </div>
+            </section>
+          </article>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Joel Fabrin</p>
+    </footer>
+  </body>
+</html>
