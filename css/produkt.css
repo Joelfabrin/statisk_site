@@ -184,52 +184,7 @@
   text-decoration: line-through;
 }
 
-.quantity-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  font-family: inter, sans-serif;
-}
-
-.quantity-row label {
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  font-size: 13px;
-  text-transform: uppercase;
-}
-
-.qty-box {
-  display: grid;
-  grid-template-columns: 42px 52px 42px;
-  border: 1px solid #cfcfcf;
-  background: #fff;
-}
-
-.qty-box button,
-.qty-box input {
-  border: 0;
-  background: transparent;
-  height: 42px;
-  text-align: center;
-  font-family: inter, sans-serif;
-  font-size: 14px;
-}
-
-.qty-box button {
-  cursor: pointer;
-}
-
-.qty-box button:hover {
-  background: #f6f6f6;
-}
-
-.qty-box input {
-  width: 110%;
-}
-
-.basket-knap,
-.secondary-knap {
+.basket-knap {
   width: 100%;
   border: 1px solid #111;
   text-align: center;
@@ -253,16 +208,6 @@
 
 .basket-knap:hover {
   background: rgb(240, 21, 244);
-  border-color: rgb(240, 21, 244);
-}
-
-.secondary-knap {
-  background: #fff;
-  color: #111;
-}
-
-.secondary-knap:hover {
-  color: rgb(240, 21, 244);
   border-color: rgb(240, 21, 244);
 }
 
