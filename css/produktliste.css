@@ -183,3 +183,54 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+@media (max-width: 700px) {
+  .textline {
+    margin: 90px 18px 10px;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .textline h2,
+  .produkter-container h2 {
+    font-size: 34px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .tilbageknap {
+    margin: 8px 18px 18px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .produkter {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .produkt-kort {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .produkt-navn {
+    min-height: 0;
+  }
+
+  .produkt-meta {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .produkt-pris,
+  #rabat-pris,
+  .ny-pris,
+  .lagerstatus {
+    grid-column: 1;
+    justify-self: start;
+  }
+}

@@ -234,6 +234,18 @@
     margin-right: 18px;
   }
 
+  .tilbageknap {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .produkt-side {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .produkt-galleri {
     grid-template-columns: 1fr;
   }
@@ -249,10 +261,20 @@
   .pris-panel {
     grid-template-columns: 1fr;
     justify-items: start;
+    padding: 12px;
   }
 
   .lagerstatus {
     justify-self: start;
+  }
+
+  .produkt-info {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .produkt-navn {
+    font-size: 24px;
   }
 
   .relaterede-grid {

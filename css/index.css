@@ -69,3 +69,31 @@
 .btns a:active {
   transform: translateY(1px);
 }
+
+@media (max-width: 700px) {
+  .textline {
+    margin: 90px 18px 16px;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .textline h2,
+  .categories-container h2 {
+    font-size: 34px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .btns {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .btns a {
+    margin: 0;
+    font-size: 16px;
+    padding: 14px 0;
+  }
+}
